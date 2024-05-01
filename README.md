@@ -87,5 +87,12 @@
 
 ## Как установить
 
-...developing...
+0. Скачать репозиторий на свою машину
+
+1. `
+pip install fastapi
+pip install uvicorn
+`
+2. `cd "путь к папке проекта"`
+3. `uvicorn main:app --reload`
 
