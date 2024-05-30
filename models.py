@@ -24,13 +24,13 @@ class RoleEnum(str, Enum):
 
 #Профиль зарегестрированного пользователя
 class UserProfile(BaseModel):
-    user_id: int
-    photo: str
-    organization: str
-    assigned_dogs: List[int]
-    last_online: str
-    tasks: List[int]
-    role: RoleEnum
+    user_id: int = 10
+    photo: str = "not"
+    organization: str = "not"
+    assigned_dogs: List[int] = None
+    last_online: str = "off"
+    tasks: List[int] = None
+    role: RoleEnum = "User"
     email: str
     name: str
     password: str
@@ -39,14 +39,8 @@ class UserProfile(BaseModel):
 class Role(BaseModel):
     role_name: RoleEnum
 
-#Задача
 class Task(BaseModel):
     task_id: int
     description: str
     verified: bool
     executors: List[int]
-
-#Уведомление
-class Notification(BaseModel):
-    reciever: int
-    message: str
