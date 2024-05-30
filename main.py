@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from models import DogProfile, UserProfile, Role
+from models import DogProfile, UserProfile, Role, Notification
 import services
 from logger import get_logger
 
@@ -17,6 +17,11 @@ def read_root():
 def register_user(user: UserProfile):
     logger.info(f"User {user.user_id} trying to register")
     return services.register_new_user(user)
+
+@app.post("/notify")
+def notify_user(notification: Notification):
+    logger.info(f"Trying to notify user {notification.reciever}")
+    return services.notify(notification)
 
 @app.post("/role_register")
 def role_register(user: UserProfile, role: Role):

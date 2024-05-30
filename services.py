@@ -1,12 +1,10 @@
 import database
-from models import DogProfile, UserProfile, Role
+from models import DogProfile, UserProfile, Role, Notification, Task
 from logger import get_logger
 logger=get_logger("services")
 
-# Пример бизнес-логики приложения
+
 def register_new_user(user_data: UserProfile):
-    # Проверка уникальности email и другие проверки
-    # Если все проверки пройдены, то регистрируем нового пользователя
     
     if (user_data.user_id in database.database):
         logger.error(f"User with id: {user_data.user_id} already exists")
@@ -19,7 +17,15 @@ def register_new_user(user_data: UserProfile):
     database.add_user(user_data)
     logger.info(f"User {user_data.user_id} successfully registered")
     return {"user_id":user_data.user_id}
-    
+   
+def notify(note: Notification):
+    if not(note.reciever in database.database):
+        logger.error(f"User with id: {note.reciever} is not registered")
+        return False
+    else:
+        logger.info(f"Sending message {note.message} to user with id: {note.reciever}")
+        return True
+   
 
 def assign_dog_to_user(user_id: int, dog_id: int):
     user = database.get_user(user_id)
