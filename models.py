@@ -34,8 +34,6 @@ class UserProfile(BaseModel):
     email: str
     name: str
     password: str
-#?
-
 #Роль пользователя
 class Role(BaseModel):
     role_name: RoleEnum
@@ -43,5 +41,5 @@ class Role(BaseModel):
 class Task(BaseModel):
     task_id: int
     description: str
-    verified: bool
+    verified: bull
     executors: List[int]
