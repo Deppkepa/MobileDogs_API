@@ -1,10 +1,13 @@
 from typing import Dict
-from models import DogProfile, UserProfile, Role
+from models import DogProfile, UserProfile, Role, Task
 from logger import get_logger
 logger=get_logger("database")
 
 #База данных. Словарь, в котором хранятся пользователи в формате JSON UserProfile
 database: Dict[int, UserProfile] = {}
+
+#База данных. Словарь, в котором хранятся задачи в формате JSON Task
+Tasks_database: Dict[int, Task] = {}
 
 def add_user(user: UserProfile):
     logger.info(f"Adding user {user.user_id} to database")

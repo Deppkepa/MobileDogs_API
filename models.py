@@ -39,8 +39,14 @@ class UserProfile(BaseModel):
 class Role(BaseModel):
     role_name: RoleEnum
 
+#Задача
 class Task(BaseModel):
     task_id: int
     description: str
-    verified: bull
+    verified: bool
     executors: List[int]
+
+#Уведомление
+class Notification(BaseModel):
+    reciever: int
+    message: str
