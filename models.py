@@ -13,7 +13,7 @@ class DogProfile(BaseModel):
     volunteer_name: str
     notes: str
     dog_status: str
-    tasks: List[str]
+    tasks: List[int]
     location: str
 
 #Список ролей для пользователя
@@ -29,7 +29,7 @@ class UserProfile(BaseModel):
     organization: str
     assigned_dogs: List[int]
     last_online: str
-    tasks: List[str]
+    tasks: List[int]
     role: RoleEnum
     email: str
     name: str
@@ -38,3 +38,9 @@ class UserProfile(BaseModel):
 #Роль пользователя
 class Role(BaseModel):
     role_name: RoleEnum
+
+class Task(BaseModel):
+    task_id: int
+    description: str
+    verified: bull
+    executors: List[int]
