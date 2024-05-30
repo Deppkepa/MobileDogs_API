@@ -6,15 +6,15 @@ from enum import Enum
 
 #Профиль собаки
 class DogProfile(BaseModel):
-    collar_status: str
-    photo: str
+    collar_status: str = "OK"
+    photo: str = ""
     collar_id: int
-    name: str
-    volunteer_name: str
-    notes: str
-    dog_status: str
-    tasks: List[int]
-    location: str
+    name: str = ""
+    volunteer_name: str = ""
+    notes: str = ""
+    dog_status: str = "OK"
+    tasks: List[int] = []
+    location: str = ""
 
 #Список ролей для пользователя
 class RoleEnum(str, Enum):
@@ -41,9 +41,9 @@ class Role(BaseModel):
 #Задача
 class Task(BaseModel):
     task_id: int
-    description: str
-    verified: bool
-    executors: List[int]
+    description: str = ""
+    verified: bool = True
+    executors: List[int] = []
 
 #Уведомление
 class Notification(BaseModel):
