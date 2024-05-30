@@ -2,6 +2,8 @@ from pydantic import BaseModel
 from typing import List
 from enum import Enum
 
+#
+
 #Профиль собаки
 class DogProfile(BaseModel):
     collar_status: str
