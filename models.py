@@ -34,6 +34,7 @@ class UserProfile(BaseModel):
     email: str
     name: str
     password: str
+#
 
 #Роль пользователя
 class Role(BaseModel):
