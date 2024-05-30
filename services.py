@@ -1,5 +1,7 @@
 import database
 from models import DogProfile, UserProfile, Role
+from logger import get_logger
+logger=get_logger("services")
 
 # Пример бизнес-логики приложения
 def register_new_user(user_data: UserProfile):
@@ -7,13 +9,16 @@ def register_new_user(user_data: UserProfile):
     # Если все проверки пройдены, то регистрируем нового пользователя
     
     if (user_data.user_id in database.database):
-        return "User already exists"
+        logger.error(f"User with id: {user_data.user_id} already exists")
+        return f"User with id: {user_data.user_id} already exists"
     else:
         for i in database.database:
             if database.database[i].email==user_data.email:
-                return "Email is already taken"
+                logger.error(f"Email {user_data.email} is already taken")
+                return f"Email {user_data.email} is already taken"
     database.add_user(user_data)
-    return f"User {user_data.name} successfully registered"
+    logger.info(f"User {user_data.user_id} successfully registered")
+    return {"user_id":user_data.user_id}
     
 
 def assign_dog_to_user(user_id: int, dog_id: int):
