@@ -26,3 +26,10 @@ def update_user(user_data: UserProfile):
         return True
     else:
         return False
+def add_dog(dog: DogProfile):
+    logger.info(f"Adding dog {dog.register_number} to Collar_database")
+    Collar_database[dog.register_number] = dog
+
+def assign_dog(user_id: int, dog_id:int):
+    logger.info(f"Adding dog with id {dog_id} to user {user_id}")
+    database[user_id].assigned_dogs.append(dog_id)

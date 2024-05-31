@@ -10,7 +10,7 @@ class DogProfile(BaseModel):
     photo: str
     register_number: int
     name: str
-    volunteer_name: str = ""
+    volunteer_id: List[int] = []
     notes: str = ""
     dog_status: str = "OK"
     tasks: List[int] = []
@@ -41,9 +41,10 @@ class Role(BaseModel):
 #Задача
 class Task(BaseModel):
     task_id: int
-    description: str = ""
-    verified: bool = True
-    executors: List[int] = []
+    description: str = "" #описание
+    verified: bool = False #выполнена ли задача
+    executors: List[int] = [] #исполнители
+    deadline: str = "" #дедлайн
 
 #Уведомление
 class Notification(BaseModel):
