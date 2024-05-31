@@ -4,12 +4,12 @@ from enum import Enum
 
 #
 
-#Профиль собаки
+#Профиль собаки тут же ошейник
 class DogProfile(BaseModel):
     collar_status: str = "OK"
-    photo: str = ""
-    collar_id: int
-    name: str = ""
+    photo: str
+    register_number: int
+    name: str
     volunteer_name: str = ""
     notes: str = ""
     dog_status: str = "OK"
@@ -24,7 +24,7 @@ class RoleEnum(str, Enum):
 
 #Профиль зарегестрированного пользователя
 class UserProfile(BaseModel):
-    user_id: int
+    user_id: int = None
     photo: str = ""
     organization: str = ""
     assigned_dogs: List[int] = []

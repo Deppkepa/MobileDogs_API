@@ -10,7 +10,7 @@ database: Dict[int, UserProfile] = {}
 Tasks_database: Dict[int, Task] = {}
 
 #База данных. Словарь, в котором хранятся ошейники в формате Json DogProfile
-Collar_database: Dict[int, DogProgile] = {}
+Collar_database: Dict[int, DogProfile] = {}
 
 def add_user(user: UserProfile):
     logger.info(f"Adding user {user.user_id} to database")
