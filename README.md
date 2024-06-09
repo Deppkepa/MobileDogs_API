@@ -93,3 +93,7 @@
 
 ```pip install -e git+https://github.com/Deppkepa/MobileDogs_API.git#egg=MobileDogs_API```
 
+Или
+
+```pip install -i https://test.pypi.org/simple/ MobileDogs-API==1.0```
+
