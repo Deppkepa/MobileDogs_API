@@ -12,6 +12,12 @@ Tasks_database: Dict[int, Task] = {}
 #База данных. Словарь, в котором хранятся ошейники в формате Json DogProfile
 Collar_database: Dict[int, DogProfile] = {}
 
+def give_role_to_user(sender: UserProfile,role: Role,user_id: int):
+    role=role.role_name
+    logger.info(f"Giving role '{role}' to user with id: {user_id}")
+    database[user_id].role=role
+    return {"message":f"User with id: {user_id} is now {role}"}
+
 def assign_task_to_user(sender: int, reciever: int,task_id:int):
     logger.info(f"Assigning task {task_id} to user {reciever}")
     database[reciever].tasks.append(task_id)

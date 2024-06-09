@@ -13,8 +13,14 @@ def read_root():
     logger.info(f"Hello world said")
     return {"message": "Hello World"}
 
+@app.post("/give_role")
+def give_role_to_user(sender: UserProfile, role: Role, user_id: Annotated[int, Body()]):
+    logger.info(f"Trying to give role to user")
+    return services.give_role_to_user(sender,role,user_id)
+
 @app.post("/assign_task")
 def assign_task_to_user(sender: UserProfile, reciever: UserProfile,task_id: Annotated[int, Body()]):
+    logger.info(f"Trying to assign task to user")
     return services.assign_task_to_user(sender,reciever,task_id)
 
 @app.post("/get_user_tasks")

@@ -177,3 +177,17 @@ def assign_task_to_user(sender: UserProfile, reciever: UserProfile,task_id:int):
     
     return database.assign_task_to_user(sender.user_id,reciever.user_id,task_id)
 
+def give_role_to_user(sender: UserProfile,role: Role,user_id: int):
+    if not(sender.user_id in database.database):
+        logger.error(f"User with id: {sender.user_id} is not registered")
+        return {"message":"User is not registered"}
+    else:
+        sender=database.database[sender.user_id]
+    if not(user_id in database.database):
+        logger.error(f"User with id: {user_id} is not registered")
+        return {"message":"User is not registered"}
+    if sender.role!="Admin":
+        logger.error(f"User with id: {sender.user_id} is not an Admin")
+        return {"message":f"User with id: {sender.user_id} is not an Admin"}
+    return database.give_role_to_user(sender,role,user_id)
+        

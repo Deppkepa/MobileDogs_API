@@ -1,0 +1,184 @@
+2024-06-10 02:04:03,933 — main — INFO — User None trying to register - Windows-10-10.0.19045-SP0
+2024-06-10 02:04:03,947 — database — INFO — Adding user 0 to database - Windows-10-10.0.19045-SP0
+2024-06-10 02:04:03,950 — services — INFO — User 0 successfully registered - Windows-10-10.0.19045-SP0
+2024-06-10 02:05:16,186 — main — INFO — User 0 trying to get tasks info - Windows-10-10.0.19045-SP0
+2024-06-10 02:05:16,224 — database — INFO — Getting tasks for user with id: 0 - Windows-10-10.0.19045-SP0
+2024-06-10 02:05:22,966 — main — INFO — User 1 trying to get tasks info - Windows-10-10.0.19045-SP0
+2024-06-10 02:05:23,016 — services — ERROR — User with id: 1 is not registered - Windows-10-10.0.19045-SP0
+2024-06-10 02:05:29,175 — main — INFO — User 0 trying to get tasks info - Windows-10-10.0.19045-SP0
+2024-06-10 02:05:29,202 — services — ERROR — Task with id: 1 does not exist - Windows-10-10.0.19045-SP0
+2024-06-10 02:05:33,567 — main — INFO — User 0 trying to get tasks info - Windows-10-10.0.19045-SP0
+2024-06-10 02:05:33,570 — services — ERROR — Task with id: 2 does not exist - Windows-10-10.0.19045-SP0
+2024-06-10 02:07:37,036 — main — INFO — Request for creating a task. - Windows-10-10.0.19045-SP0
+2024-06-10 02:07:37,081 — database — INFO — Adding dog 0 to Collar_database - Windows-10-10.0.19045-SP0
+2024-06-10 02:07:37,087 — services — INFO — Task 0 successfully registered - Windows-10-10.0.19045-SP0
+2024-06-10 02:07:50,479 — main — INFO — User 0 trying to get tasks info - Windows-10-10.0.19045-SP0
+2024-06-10 02:07:50,547 — database — INFO — Getting tasks for user with id: 0 - Windows-10-10.0.19045-SP0
+2024-06-10 02:39:14,854 — services — ERROR — User with id: 0 is not registered - Windows-10-10.0.19045-SP0
+2024-06-10 02:40:23,518 — main — INFO — User 0 trying to register - Windows-10-10.0.19045-SP0
+2024-06-10 02:40:23,520 — database — INFO — Adding user 0 to database - Windows-10-10.0.19045-SP0
+2024-06-10 02:40:23,523 — services — INFO — User 0 successfully registered - Windows-10-10.0.19045-SP0
+2024-06-10 02:40:28,072 — main — INFO — User 0 trying to register - Windows-10-10.0.19045-SP0
+2024-06-10 02:40:28,111 — services — ERROR — User with id: 0 already exists - Windows-10-10.0.19045-SP0
+2024-06-10 02:41:30,891 — main — INFO — Request for creating a task. - Windows-10-10.0.19045-SP0
+2024-06-10 02:41:30,902 — database — INFO — Adding dog 1 to Collar_database - Windows-10-10.0.19045-SP0
+2024-06-10 02:41:30,904 — services — INFO — Task 1 successfully registered - Windows-10-10.0.19045-SP0
+2024-06-10 02:42:36,258 — services — ERROR — Task with id: 0 does not exist - Windows-10-10.0.19045-SP0
+2024-06-10 02:42:44,010 — services — ERROR — User with id: 1 is not registered - Windows-10-10.0.19045-SP0
+2024-06-10 02:48:46,755 — services — ERROR — User with id: 0 is not registered - Windows-10-10.0.19045-SP0
+2024-06-10 02:49:19,176 — main — INFO — User 0 trying to register - Windows-10-10.0.19045-SP0
+2024-06-10 02:49:19,178 — database — INFO — Adding user 0 to database - Windows-10-10.0.19045-SP0
+2024-06-10 02:49:19,181 — services — INFO — User 0 successfully registered - Windows-10-10.0.19045-SP0
+2024-06-10 02:49:46,531 — services — ERROR — Task with id: 1 does not exist - Windows-10-10.0.19045-SP0
+2024-06-10 02:50:21,636 — main — INFO — Request for creating a task. - Windows-10-10.0.19045-SP0
+2024-06-10 02:50:21,692 — database — INFO — Adding dog 1 to Collar_database - Windows-10-10.0.19045-SP0
+2024-06-10 02:50:21,695 — services — INFO — Task 1 successfully registered - Windows-10-10.0.19045-SP0
+2024-06-10 02:50:31,899 — services — ERROR — User 0 is already assigned to task 1 - Windows-10-10.0.19045-SP0
+2024-06-10 02:51:59,075 — main — INFO — User 0 trying to register - Windows-10-10.0.19045-SP0
+2024-06-10 02:51:59,078 — database — INFO — Adding user 0 to database - Windows-10-10.0.19045-SP0
+2024-06-10 02:51:59,080 — services — INFO — User 0 successfully registered - Windows-10-10.0.19045-SP0
+2024-06-10 02:52:25,138 — main — INFO — Request for creating a task. - Windows-10-10.0.19045-SP0
+2024-06-10 02:52:25,140 — database — INFO — Adding dog 1 to Collar_database - Windows-10-10.0.19045-SP0
+2024-06-10 02:52:25,141 — services — INFO — Task 1 successfully registered - Windows-10-10.0.19045-SP0
+2024-06-10 02:54:19,966 — main — INFO — Request for creating a task. - Windows-10-10.0.19045-SP0
+2024-06-10 02:54:20,003 — database — INFO — Adding dog 1 to Collar_database - Windows-10-10.0.19045-SP0
+2024-06-10 02:54:20,006 — services — INFO — Task 1 successfully registered - Windows-10-10.0.19045-SP0
+2024-06-10 02:54:33,160 — main — INFO — User 0 trying to register - Windows-10-10.0.19045-SP0
+2024-06-10 02:54:33,163 — database — INFO — Adding user 0 to database - Windows-10-10.0.19045-SP0
+2024-06-10 02:54:33,164 — services — INFO — User 0 successfully registered - Windows-10-10.0.19045-SP0
+2024-06-10 02:54:53,960 — database — INFO — Assigning task 1 to user 0 - Windows-10-10.0.19045-SP0
+2024-06-10 02:57:56,829 — main — INFO — User 0 trying to register - Windows-10-10.0.19045-SP0
+2024-06-10 02:57:56,833 — database — INFO — Adding user 0 to database - Windows-10-10.0.19045-SP0
+2024-06-10 02:57:56,836 — services — INFO — User 0 successfully registered - Windows-10-10.0.19045-SP0
+2024-06-10 02:58:08,706 — main — INFO — Request for creating a task. - Windows-10-10.0.19045-SP0
+2024-06-10 02:58:08,764 — database — INFO — Adding dog 1 to Collar_database - Windows-10-10.0.19045-SP0
+2024-06-10 02:58:08,765 — services — INFO — Task 1 successfully registered - Windows-10-10.0.19045-SP0
+2024-06-10 02:58:26,614 — database — INFO — Assigning task 1 to user 0 - Windows-10-10.0.19045-SP0
+2024-06-10 02:59:30,826 — main — INFO — User info profile output - Windows-10-10.0.19045-SP0
+2024-06-10 02:59:30,829 — services — INFO — Profile user with id {'user_id': 1} request successfully - Windows-10-10.0.19045-SP0
+2024-06-10 03:00:38,977 — main — INFO — User info profile output - Windows-10-10.0.19045-SP0
+2024-06-10 03:00:38,982 — services — INFO — Profile user with id {'user_id': 0} request successfully - Windows-10-10.0.19045-SP0
+2024-06-10 03:02:22,446 — main — INFO — User info profile output - Windows-10-10.0.19045-SP0
+2024-06-10 03:02:22,477 — services — INFO — Profile user with id {'user_id': 1} request successfully - Windows-10-10.0.19045-SP0
+2024-06-10 03:02:28,764 — main — INFO — User info profile output - Windows-10-10.0.19045-SP0
+2024-06-10 03:02:51,307 — main — INFO — User info profile output - Windows-10-10.0.19045-SP0
+2024-06-10 03:03:12,251 — main — INFO — User info profile output - Windows-10-10.0.19045-SP0
+2024-06-10 03:03:12,293 — services — ERROR — User with id 1 is not registered - Windows-10-10.0.19045-SP0
+2024-06-10 03:03:25,736 — main — INFO — User 0 trying to register - Windows-10-10.0.19045-SP0
+2024-06-10 03:03:25,740 — database — INFO — Adding user 0 to database - Windows-10-10.0.19045-SP0
+2024-06-10 03:03:25,742 — services — INFO — User 0 successfully registered - Windows-10-10.0.19045-SP0
+2024-06-10 03:03:36,106 — main — INFO — Request for creating a task. - Windows-10-10.0.19045-SP0
+2024-06-10 03:03:36,111 — database — INFO — Adding dog 1 to Collar_database - Windows-10-10.0.19045-SP0
+2024-06-10 03:03:36,114 — services — INFO — Task 1 successfully registered - Windows-10-10.0.19045-SP0
+2024-06-10 03:03:46,741 — database — INFO — Assigning task 1 to user 0 - Windows-10-10.0.19045-SP0
+2024-06-10 03:04:11,372 — main — INFO — User info profile output - Windows-10-10.0.19045-SP0
+2024-06-10 03:04:11,375 — services — INFO — Profile user with id {'user_id': 0} request successfully - Windows-10-10.0.19045-SP0
+2024-06-10 03:07:36,403 — main — INFO — User info profile output - Windows-10-10.0.19045-SP0
+2024-06-10 03:07:36,407 — services — ERROR — User with id 0 is not registered - Windows-10-10.0.19045-SP0
+2024-06-10 03:07:59,652 — main — INFO — User 0 trying to register - Windows-10-10.0.19045-SP0
+2024-06-10 03:07:59,711 — database — INFO — Adding user 0 to database - Windows-10-10.0.19045-SP0
+2024-06-10 03:07:59,715 — services — INFO — User 0 successfully registered - Windows-10-10.0.19045-SP0
+2024-06-10 03:08:16,361 — main — INFO — User 0 trying to get tasks info - Windows-10-10.0.19045-SP0
+2024-06-10 03:08:49,479 — main — INFO — User 0 trying to get tasks info - Windows-10-10.0.19045-SP0
+2024-06-10 03:09:15,158 — main — INFO — User 0 trying to register - Windows-10-10.0.19045-SP0
+2024-06-10 03:09:15,162 — database — INFO — Adding user 0 to database - Windows-10-10.0.19045-SP0
+2024-06-10 03:09:15,165 — services — INFO — User 0 successfully registered - Windows-10-10.0.19045-SP0
+2024-06-10 03:09:20,232 — main — INFO — User 0 trying to get tasks info - Windows-10-10.0.19045-SP0
+2024-06-10 03:09:20,235 — database — INFO — Getting tasks for user with id: 0 - Windows-10-10.0.19045-SP0
+2024-06-10 03:11:21,479 — main — INFO — User 0 trying to get tasks info - Windows-10-10.0.19045-SP0
+2024-06-10 03:11:21,484 — services — ERROR — User with id: 0 is not registered - Windows-10-10.0.19045-SP0
+2024-06-10 03:11:27,881 — main — INFO — User 0 trying to register - Windows-10-10.0.19045-SP0
+2024-06-10 03:11:27,926 — database — INFO — Adding user 0 to database - Windows-10-10.0.19045-SP0
+2024-06-10 03:11:27,935 — services — INFO — User 0 successfully registered - Windows-10-10.0.19045-SP0
+2024-06-10 03:11:35,382 — main — INFO — User 0 trying to get tasks info - Windows-10-10.0.19045-SP0
+2024-06-10 03:12:06,861 — main — INFO — User 0 trying to register - Windows-10-10.0.19045-SP0
+2024-06-10 03:12:06,884 — database — INFO — Adding user 0 to database - Windows-10-10.0.19045-SP0
+2024-06-10 03:12:06,886 — services — INFO — User 0 successfully registered - Windows-10-10.0.19045-SP0
+2024-06-10 03:12:11,583 — main — INFO — User 0 trying to get tasks info - Windows-10-10.0.19045-SP0
+2024-06-10 03:12:11,588 — services — ERROR — Task with id: 1 does not exist - Windows-10-10.0.19045-SP0
+2024-06-10 03:12:23,515 — main — INFO — Request for creating a task. - Windows-10-10.0.19045-SP0
+2024-06-10 03:12:23,518 — database — INFO — Adding dog 1 to Collar_database - Windows-10-10.0.19045-SP0
+2024-06-10 03:12:23,519 — services — INFO — Task 1 successfully registered - Windows-10-10.0.19045-SP0
+2024-06-10 03:12:33,791 — main — INFO — User 0 trying to get tasks info - Windows-10-10.0.19045-SP0
+2024-06-10 03:12:33,795 — database — INFO — Getting tasks for user with id: 0 - Windows-10-10.0.19045-SP0
+2024-06-10 03:13:04,944 — main — INFO — Request for creating a task. - Windows-10-10.0.19045-SP0
+2024-06-10 03:13:04,991 — database — INFO — Adding dog 2 to Collar_database - Windows-10-10.0.19045-SP0
+2024-06-10 03:13:04,998 — services — INFO — Task 2 successfully registered - Windows-10-10.0.19045-SP0
+2024-06-10 03:13:21,152 — database — INFO — Assigning task 1 to user 0 - Windows-10-10.0.19045-SP0
+2024-06-10 03:13:44,342 — main — INFO — User 0 trying to get tasks info - Windows-10-10.0.19045-SP0
+2024-06-10 03:13:44,350 — database — INFO — Getting tasks for user with id: 0 - Windows-10-10.0.19045-SP0
+2024-06-10 03:14:05,842 — main — INFO — User info profile output - Windows-10-10.0.19045-SP0
+2024-06-10 03:14:05,895 — services — ERROR — Key 'photo' does not fit. You need to use 'user_id' as a key - Windows-10-10.0.19045-SP0
+2024-06-10 03:14:22,288 — main — INFO — User info profile output - Windows-10-10.0.19045-SP0
+2024-06-10 03:14:22,344 — services — INFO — Profile user with id {'user_id': 0} request successfully - Windows-10-10.0.19045-SP0
+2024-06-10 03:16:09,550 — main — INFO — User 0 trying to register - Windows-10-10.0.19045-SP0
+2024-06-10 03:16:09,552 — database — INFO — Adding user 0 to database - Windows-10-10.0.19045-SP0
+2024-06-10 03:16:09,554 — services — INFO — User 0 successfully registered - Windows-10-10.0.19045-SP0
+2024-06-10 03:16:19,771 — main — INFO — Request for creating a task. - Windows-10-10.0.19045-SP0
+2024-06-10 03:16:19,773 — database — INFO — Adding dog 1 to Collar_database - Windows-10-10.0.19045-SP0
+2024-06-10 03:16:19,775 — services — INFO — Task 1 successfully registered - Windows-10-10.0.19045-SP0
+2024-06-10 03:16:29,341 — services — ERROR — User 0 is already assigned to task 1 - Windows-10-10.0.19045-SP0
+2024-06-10 03:16:37,613 — services — ERROR — User 0 is already assigned to task 1 - Windows-10-10.0.19045-SP0
+2024-06-10 03:17:02,626 — main — INFO — Request for creating a task. - Windows-10-10.0.19045-SP0
+2024-06-10 03:17:02,629 — database — INFO — Adding dog 2 to Collar_database - Windows-10-10.0.19045-SP0
+2024-06-10 03:17:02,632 — services — INFO — Task 2 successfully registered - Windows-10-10.0.19045-SP0
+2024-06-10 03:17:22,691 — database — INFO — Assigning task 2 to user 0 - Windows-10-10.0.19045-SP0
+2024-06-10 03:17:36,057 — main — INFO — User 0 trying to get tasks info - Windows-10-10.0.19045-SP0
+2024-06-10 03:17:36,120 — database — INFO — Getting tasks for user with id: 0 - Windows-10-10.0.19045-SP0
+2024-06-10 03:18:14,677 — main — INFO — User info profile output - Windows-10-10.0.19045-SP0
+2024-06-10 03:18:14,682 — services — INFO — Profile user with id {'user_id': 0} request successfully - Windows-10-10.0.19045-SP0
+2024-06-10 03:19:32,362 — main — INFO — User 0 trying to register - Windows-10-10.0.19045-SP0
+2024-06-10 03:19:32,365 — database — INFO — Adding user 0 to database - Windows-10-10.0.19045-SP0
+2024-06-10 03:19:32,369 — services — INFO — User 0 successfully registered - Windows-10-10.0.19045-SP0
+2024-06-10 03:19:44,592 — main — INFO — Request for creating a task. - Windows-10-10.0.19045-SP0
+2024-06-10 03:19:44,593 — database — INFO — Adding dog 1 to Collar_database - Windows-10-10.0.19045-SP0
+2024-06-10 03:19:44,594 — services — INFO — Task 1 successfully registered - Windows-10-10.0.19045-SP0
+2024-06-10 03:19:58,175 — database — INFO — Assigning task 1 to user 0 - Windows-10-10.0.19045-SP0
+2024-06-10 03:20:10,489 — main — INFO — User 0 trying to get tasks info - Windows-10-10.0.19045-SP0
+2024-06-10 03:20:10,529 — database — INFO — Getting tasks for user with id: 0 - Windows-10-10.0.19045-SP0
+2024-06-10 03:21:19,941 — main — INFO — User 0 trying to register - Windows-10-10.0.19045-SP0
+2024-06-10 03:21:19,946 — database — INFO — Adding user 0 to database - Windows-10-10.0.19045-SP0
+2024-06-10 03:21:19,948 — services — INFO — User 0 successfully registered - Windows-10-10.0.19045-SP0
+2024-06-10 03:21:31,398 — main — INFO — Request for creating a task. - Windows-10-10.0.19045-SP0
+2024-06-10 03:21:31,399 — database — INFO — Adding dog 1 to Collar_database - Windows-10-10.0.19045-SP0
+2024-06-10 03:21:31,402 — services — INFO — Task 1 successfully registered - Windows-10-10.0.19045-SP0
+2024-06-10 03:21:43,197 — database — INFO — Assigning task 1 to user 0 - Windows-10-10.0.19045-SP0
+2024-06-10 03:21:53,814 — main — INFO — User 0 trying to get tasks info - Windows-10-10.0.19045-SP0
+2024-06-10 03:21:53,824 — database — INFO — Getting tasks for user with id: 0 - Windows-10-10.0.19045-SP0
+2024-06-10 03:22:11,250 — main — INFO — User info profile output - Windows-10-10.0.19045-SP0
+2024-06-10 03:22:11,278 — services — INFO — Profile user with id {'user_id': 0} request successfully - Windows-10-10.0.19045-SP0
+2024-06-10 03:54:20,513 — main — INFO — User 0 trying to register - Windows-10-10.0.19045-SP0
+2024-06-10 03:54:20,517 — database — INFO — Adding user 0 to database - Windows-10-10.0.19045-SP0
+2024-06-10 03:54:20,520 — services — INFO — User 0 successfully registered - Windows-10-10.0.19045-SP0
+2024-06-10 03:55:30,891 — main — INFO — User 1 trying to register - Windows-10-10.0.19045-SP0
+2024-06-10 03:55:30,900 — services — ERROR — Email Alhemyd@mail.ru is already taken - Windows-10-10.0.19045-SP0
+2024-06-10 03:55:40,454 — main — INFO — User 1 trying to register - Windows-10-10.0.19045-SP0
+2024-06-10 03:55:40,457 — database — INFO — Adding user 1 to database - Windows-10-10.0.19045-SP0
+2024-06-10 03:55:40,460 — services — INFO — User 1 successfully registered - Windows-10-10.0.19045-SP0
+2024-06-10 03:57:42,976 — main — INFO — Trying to give role to user - Windows-10-10.0.19045-SP0
+2024-06-10 03:57:42,978 — services — ERROR — User with id: 1 is not an Admin - Windows-10-10.0.19045-SP0
+2024-06-10 03:57:59,408 — main — INFO — Trying to give role to user - Windows-10-10.0.19045-SP0
+2024-06-10 03:57:59,442 — database — INFO — Giving role 'role_name=<RoleEnum.Staff: 'Staff'>' to user with id: 1 - Windows-10-10.0.19045-SP0
+2024-06-10 03:58:31,897 — main — INFO — User info profile output - Windows-10-10.0.19045-SP0
+2024-06-10 03:58:31,905 — services — INFO — Profile user with id {'user_id': 1} request successfully - Windows-10-10.0.19045-SP0
+2024-06-10 03:58:47,158 — main — INFO — User info profile output - Windows-10-10.0.19045-SP0
+2024-06-10 03:58:47,165 — services — INFO — Profile user with id {'user_id': 0} request successfully - Windows-10-10.0.19045-SP0
+2024-06-10 03:59:39,236 — main — INFO — User 0 trying to register - Windows-10-10.0.19045-SP0
+2024-06-10 03:59:39,289 — database — INFO — Adding user 0 to database - Windows-10-10.0.19045-SP0
+2024-06-10 03:59:39,291 — services — INFO — User 0 successfully registered - Windows-10-10.0.19045-SP0
+2024-06-10 03:59:48,327 — main — INFO — User 1 trying to register - Windows-10-10.0.19045-SP0
+2024-06-10 03:59:48,329 — database — INFO — Adding user 1 to database - Windows-10-10.0.19045-SP0
+2024-06-10 03:59:48,330 — services — INFO — User 1 successfully registered - Windows-10-10.0.19045-SP0
+2024-06-10 04:00:36,123 — main — INFO — Trying to give role to user - Windows-10-10.0.19045-SP0
+2024-06-10 04:01:58,824 — main — INFO — User 0 trying to register - Windows-10-10.0.19045-SP0
+2024-06-10 04:01:58,877 — database — INFO — Adding user 0 to database - Windows-10-10.0.19045-SP0
+2024-06-10 04:01:58,878 — services — INFO — User 0 successfully registered - Windows-10-10.0.19045-SP0
+2024-06-10 04:02:05,181 — main — INFO — User 1 trying to register - Windows-10-10.0.19045-SP0
+2024-06-10 04:02:05,183 — database — INFO — Adding user 1 to database - Windows-10-10.0.19045-SP0
+2024-06-10 04:02:05,184 — services — INFO — User 1 successfully registered - Windows-10-10.0.19045-SP0
+2024-06-10 04:02:16,702 — main — INFO — Trying to give role to user - Windows-10-10.0.19045-SP0
+2024-06-10 04:02:16,757 — database — INFO — Giving role 'RoleEnum.Staff' to user with id: 0 - Windows-10-10.0.19045-SP0
+2024-06-10 04:03:08,164 — main — INFO — User info profile output - Windows-10-10.0.19045-SP0
+2024-06-10 04:03:08,220 — services — INFO — Profile user with id {'user_id': 1} request successfully - Windows-10-10.0.19045-SP0
+2024-06-10 04:03:15,320 — main — INFO — User info profile output - Windows-10-10.0.19045-SP0
+2024-06-10 04:03:15,380 — services — INFO — Profile user with id {'user_id': 0} request successfully - Windows-10-10.0.19045-SP0
