@@ -21,6 +21,17 @@ def register_user(user: UserProfile):
 def register_dog(dog: DogProfile):
     logger.info(f"Dog {dog.register_number} trying to register")
     return services.register_new_dog(dog)
+
+@app.post("/info-profile-dog") #ввывод профиля собаки 
+def info_profile_dog(register_number: dict):
+    logger.info(f"Dog info profile output")
+    return services.info_profile_dog(register_number)
+
+@app.post("/info-profile-user") #ввывод профиля собаки
+def info_profile_dog(user_id: dict):
+    logger.info(f"User info profile output")
+    return services.info_profile_user(user_id)
+
 @app.post("/notify")
 def notify_user(notification: Notification):
     logger.info(f"Trying to notify user {notification.reciever}")

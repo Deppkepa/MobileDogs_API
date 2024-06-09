@@ -34,8 +34,23 @@ def register_new_dog(dog_data: DogProfile):
         return f"Dog with id: {dog_data.register_number} already exists"
     database.add_dog(dog_data)
     logger.info(f"Dog {dog_data.register_number} successfully registered")
-    return {"register_number to dog":dog_data.register_number}
+    return {"register_number to dog": dog_data.register_number}
 
+def info_profile_dog(register_number: dict):
+    for key in register_number:
+        if key != "register_number":
+            logger.error(f"Key '{key}' does not fit. You need to use 'register_number' as a key")
+            return f"Key '{key}' does not fit."
+    logger.info(f"Profile dog with number collar {register_number['register_number']} request successfully")
+    return {f"Profile dog with number collar": database.Collar_database[int(register_number['register_number'])]}
+
+def info_profile_user(user_id: dict):
+    for key in user_id:
+        if key != "user_id":
+            logger.error(f"Key '{key}' does not fit. You need to use 'user_id' as a key")
+            return f"Key '{key}' does not fit."
+    logger.info(f"Profile user with id {user_id} request successfully")
+    return {f"Profile user with id": database.database[user_id['user_id']]}
 def notify(note: Notification): #3 запрос уведомления
     if not(note.reciever in database.database):
         logger.error(f"User with id: {note.reciever} is not registered")

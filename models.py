@@ -30,7 +30,7 @@ class UserProfile(BaseModel):
     assigned_dogs: List[int] = []
     last_online: str = ""
     tasks: List[int] = []
-    role: RoleEnum = "User"
+    role: RoleEnum
     email: str
     name: str
     password: str
