@@ -1,3 +1,4 @@
+from datetime import datetime
 from pydantic import BaseModel
 from typing import List
 from enum import Enum
@@ -30,7 +31,7 @@ class UserProfile(BaseModel):
     assigned_dogs: List[int] = []
     last_online: str = ""
     tasks: List[int] = []
-    role: RoleEnum = "User"
+    role: RoleEnum
     email: str
     name: str
     password: str
@@ -40,11 +41,11 @@ class Role(BaseModel):
 
 #Задача
 class Task(BaseModel):
-    task_id: int
-    description: str = "" #описание
+    task_id: int = None
+    description: str #описание
     verified: bool = False #выполнена ли задача
     executors: List[int] = [] #исполнители
-    deadline: str = "" #дедлайн
+    deadline: datetime #дедлайн
 
 #Уведомление
 class Notification(BaseModel):

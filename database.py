@@ -30,6 +30,16 @@ def add_dog(dog: DogProfile):
     logger.info(f"Adding dog {dog.register_number} to Collar_database")
     Collar_database[dog.register_number] = dog
 
+def add_task(task: Task):
+    logger.info(f"Adding dog {task.task_id} to Collar_database")
+    Tasks_database[task.task_id] = task
+
 def assign_dog(user_id: int, dog_id:int):
     logger.info(f"Adding dog with id {dog_id} to user {user_id}")
     database[user_id].assigned_dogs.append(dog_id)
+
+def task_verified(task_id):
+    if (Tasks_database[task_id].verified == True):
+        Tasks_database[task_id].verified = False
+    else:
+        Tasks_database[task_id].verified = True
