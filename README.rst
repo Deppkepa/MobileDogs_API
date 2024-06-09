@@ -156,14 +156,10 @@ MobileDogs_API
 Как установить
 --------------
 
-0. Скачать репозиторий на свою машину
 
-1. 
 
 ::
 
-   pip install fastapi
-   pip install uvicorn
+   pip install -e git+https://github.com/Deppkepa/MobileDogs_API.git#egg=MobileDogs_API
 
-2. ``cd "путь к папке проекта"``
-3. ``uvicorn main:app --reload``
+
