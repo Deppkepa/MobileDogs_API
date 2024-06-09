@@ -1,6 +1,7 @@
 import database
 from models import DogProfile, UserProfile, Role, Notification, Task
 from logger import get_logger
+
 logger=get_logger("services")
 def generate_unique_id():
     id = 0
@@ -58,6 +59,9 @@ def info_profile_user(user_id: dict):
         if key != "user_id":
             logger.error(f"Key '{key}' does not fit. You need to use 'user_id' as a key")
             return f"Key '{key}' does not fit."
+    if not(user_id['user_id'] in database.database):
+        logger.error(f"User with id {user_id['user_id']} is not registered")
+        return {"message":f"User with id {user_id['user_id']} is not registered"}
     logger.info(f"Profile user with id {user_id} request successfully")
     return {f"Profile user with id": database.database[user_id['user_id']]}
 def notify(note: Notification): #3 запрос уведомления
@@ -138,3 +142,38 @@ def status_task(task_id: dict):
             return f"Key '{key}' does not fit."
     logger.info(f"Status task with id {task_id['task_id']} request successfully")
     return {f"Status task with id": database.Tasks_database[task_id['task_id']].verified}
+
+def get_tasks(user: UserProfile):
+    if not(user.user_id in database.database):
+        logger.error(f"User with id: {user.user_id} is not registered")
+        return {"message":"User is not registered"}
+    for task in user.tasks:
+        if not(task in database.Tasks_database):
+            logger.error(f"Task with id: {task} does not exist")
+            return {"message":f"Task with id: {task} does not exist"}
+    return database.get_tasks(database.database[user.user_id])
+
+def assign_task_to_user(sender: UserProfile, reciever: UserProfile,task_id:int):
+    if not(sender.user_id in database.database):
+        logger.error(f"User with id: {sender.user_id} is not registered")
+        return {"message":"User is not registered"}
+    else:
+        sender=database.database[sender.user_id]
+    if not(reciever.user_id in database.database):
+        logger.error(f"User with id: {reciever.user_id} is not registered")
+        return {"message":"User is not registered"}
+    else:
+        reciever=database.database[reciever.user_id]
+    if not(task_id in database.Tasks_database):
+        logger.error(f"Task with id: {task_id} does not exist")
+        return {"message":f"Task {task_id} does not exist"}
+    
+    if sender.role!="Admin":
+        logger.error(f"User {sender.user_id} does not have permission to assign a task")
+        return {"message":f"User {sender.user_id} does not have permission to assign a task"}
+    if task_id in reciever.tasks:
+        logger.error(f"User {reciever.user_id} is already assigned to task {task_id}")
+        return {"message":f"User {reciever.user_id} is already assigned to task {task_id}"}
+    
+    return database.assign_task_to_user(sender.user_id,reciever.user_id,task_id)
+
