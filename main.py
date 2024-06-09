@@ -50,10 +50,14 @@ def dog_in_user(request: dict):
     logger.info(f"Trying to assign a dog to user")
     return services.assign_dog_to_user(request)
 
+@app.post("/status-task")
+def status_task(task_id: dict):
+    logger.info(f"Trying to get status of the task")
+    return services.status_task(task_id)
 
-@app.post("/role_register")
-def role_register(user: UserProfile, role: Role):
-    return user,role
+@app.post("/role_update")
+def role_update(requast: dict, role: Role):
+    return services.role_update(requast, role)
 
 
 if __name__ == "__main__":

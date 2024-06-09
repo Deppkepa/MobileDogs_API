@@ -118,6 +118,8 @@ def checkbox_task(task_id: dict):
         logger.info(f"The {task_id['task_id']} task is no longer verified")
         return "The task is no longer verified"
 
+def role_update(requast: dict, role: Role):
+    return {requast, role}
 def update_user_profile(user_id: int, updated_data: dict): #обновить профиль пользователя
     user = get_user(user_id)
     if user:
@@ -128,3 +130,11 @@ def update_user_profile(user_id: int, updated_data: dict): #обновить п�
         if update_user(user_id, updated_user):
             return True
     return False
+
+def status_task(task_id: dict):
+    for key in task_id:
+        if key != "task_id":
+            logger.error(f"Key '{key}' does not fit. You need to use 'task_id' as a key")
+            return f"Key '{key}' does not fit."
+    logger.info(f"Status task with id {task_id['task_id']} request successfully")
+    return {f"Status task with id": database.Tasks_database[task_id['task_id']].verified}
